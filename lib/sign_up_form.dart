@@ -16,6 +16,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
   final TextEditingController _firstNameController = TextEditingController();
   final TextEditingController _lastNameController = TextEditingController();
   final TextEditingController _mobileNoController = TextEditingController();
+  bool isChecked = false;
+
   RegExp _numeric = RegExp(r"^[0-9]*$");
   RegExp _alphaNumeric = RegExp(r'^[a-zA-Z0-9&%=]+$');
 
@@ -174,57 +176,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         SizedBox(
                           height: 20,
                         ),
-                        // FormField<bool>(
-                        //   builder: (state) {
-                        //     return Column(
-                        //       children: <Widget>[
-                        //         Row(
-                        //           children: <Widget>[
-                        //             Checkbox(
-                        //                 shape: RoundedRectangleBorder(
-                        //                   borderRadius: BorderRadius.circular(2),
-                        //                 ),
-                        //                 side: MaterialStateBorderSide.resolveWith(
-                        //                   (states) => const BorderSide(),
-                        //                 ),
-                        //                 value: checkboxValue,
-                        //                 onChanged: (value) {
-                        //                   setState(() {
-                        //                     checkboxValue = value!;
-                        //                     state.didChange(value);
-                        //                   });
-                        //                 }),
-                        //             Row(
-                        //               children: [
-                        //                 Text("By creating the account you agree to the"),
-                        //                 TextButton(
-                        //                     onPressed: () {
-                        //                       _RegistrationSuccessfulDilog();
-                        //                     },
-                        //                     child: Text("terms and condtions")),
-                        //                 Text("of the hospital."),
-                        //               ],
-                        //             )
-                        //           ],
-                        //         ),
-                        //         //display error in matching theme
-                        //         Align(
-                        //           alignment: Alignment.centerLeft,
-                        //           child: Text(
-                        //             state.errorText ?? '',
-                        //           ),
-                        //         )
-                        //       ],
-                        //     );
-                        //   },
-                        //   validator: (value) {
-                        //     if (!checkboxValue) {
-                        //       return 'You need to accept terms';
-                        //     } else {
-                        //       return null;
-                        //     }
-                        //   },
-                        // ),
+                        CheckboxListTile(
+                            title: Text('Checkbox Example'),
+                            value: isChecked,
+                            onChanged: (value) {
+                              setState(() {
+                                isChecked = value!;
+                              });
+                            })
                       ],
                     ),
                   ),
