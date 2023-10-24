@@ -1,0 +1,75 @@
+// ignore_for_file: constant_identifier_names
+
+enum NavigationEnum { GO, POP, PUSH, REPLACE, PUSHCALLBACK }
+
+enum SignUpPatientsTypeEnum { EXISTINGPATINET, NEWPATIENT, SUCCESS }
+
+enum ExistingPatientViewEnum { ENTERDETAILS, FETCHDETAILS, EREGISTRATIONDETAILS, ECREATEPASSWORD, EUPLOADID, EINSURANCE, SUCCESS }
+
+enum NewPatientViewEnum { INTROSCREE, REGISTRATIONDETAILS, CREATEPASSWORD, UPLOADID, INSURANCE, SUCCESS }
+
+enum ForgotPasswordEnum {
+  VERIFYUSER,
+  SENDPASSWORD,
+  CREATEPASSWORD,
+  PASSWORDSUCESS,
+}
+
+enum PushNotificationClickTypesEnum {
+  PatientCheckIn,AppointmentRescheduleAlert,AppointmentCancelationAlert,NewAppointmentAlert
+} 
+
+enum PatientJourneyServiceJourneyStatusEnum { UPCOMING, WAITING, ONGOING, COMPLETED }
+
+enum ApiMethodTypesEnums { GET, POST, PUT, DELETE, PATCh, POSTFILE, GETFILE }
+
+enum UrlAuthtypeEnum { AUTH, NONAUTH }
+
+enum ApiStatus { SUCCESS, EXCEPTION, UNAUTHORISED, ERROR }
+
+enum FamilyMemberEnum { ADDFAMILYMEMBER, UPDATEFAMILYMEMBER, LISTOFFAMILYMEMBER }
+
+enum OTPRequestedFromEnums { SIGNUP, FORGOTPASSWORD, EXISTINGPATIENT }
+
+enum BookAppointmentEnum { BookAppointmentScreen, ConfirmDetailsScreen }
+
+enum PatientJourneyTabEnum { JOURNEY, ADDITIONALINFO }
+
+enum AppointmentEnum {
+  APPOINTMENTLIST,
+  //APPOINTMENTDETAILS,
+  APPOINTMENTJOURNEY,
+  // QRCODESCANNER,
+  TOKENCARDSCREEN
+}
+
+enum AppointmentDetailEnum { APPOINTMENTDETAILS, APPOINTMENTJOURNEY, PREARRIVALREQUEST, UPDATE_SYMPTOMS, INVOICE, INSTRUCTIONS }
+
+enum KYCStatusEnums { APPROVED, REJECTED, PENDING, NONE, CANCELLED, SCHEDULED }
+
+enum AppointmetnStatusEnum { APPROVED, REJECTED, PENDING, NONE, CANCELLED, SCHEDULED }
+
+enum CreateProfileTypeEnum { SELF, FAMILY }
+
+enum CreateProfileTypeEnum2 { SELF, FAMILY }
+
+enum AppointmentScreenTypeEnum { BOOKAPPOINTMENT, RESCHEDULEAPPOINTMENT }
+
+enum LayoutTypeEnum { MOBILE_LAYOUT, TAB_POTRAIT_LAYOUT, TAB_LANDSCAPE_LAYOUT, WEB_LAYOUT }
+
+enum AppointmentDetailButtonEnum { CANCEL_CONFIRM, PREARRIVAL_CHECKIN }
+
+enum DialogType {
+  DEFAULT,
+  DEFAULT_CONFIRM,
+  BOOKAPP_PAYTYPE,
+  BOOKAPP_SUCCESS,
+  SOS_CONFIRM,
+  UPDATE_SYMPTOMS,
+  PAYMENT_CONFIRM,
+  PHARMACY_DELIVERY,
+  NEXT_DAY_PICKUP,
+  YOUR_JOURNEY_COM,
+  DOOR_DELIVERY,
+  SHOW_KYC_IMAGE
+}
